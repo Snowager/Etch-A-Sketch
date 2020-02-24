@@ -4,7 +4,12 @@ function makeDiv() {
     let gridDiv = document.createElement('div');
         gridDiv.classList.add('divBlack');
         container.appendChild(gridDiv);
-
 }
 
-makeDiv()
+function divFactory() {
+    for (i = 0; i <= 255; i++) {
+        makeDiv() 
+    }
+}
+
+divFactory()
