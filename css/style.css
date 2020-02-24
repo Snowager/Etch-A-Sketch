@@ -1,0 +1,26 @@
+
+body {
+    display: grid;
+    grid-template-columns: auto 960px auto;
+    grid-template-rows: auto 960px auto;
+}
+
+#gres {
+    grid-column-start: 2;
+    grid-column-end: 3;    
+    justify-self: center;
+}
+
+#container {
+    grid-column-start: 2;
+    grid-column-end: 3; 
+    grid-row-start: 2;
+    grid-row-end: 3; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr 1fr;
+}
+ /* 
+    
