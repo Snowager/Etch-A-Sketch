@@ -22,5 +22,8 @@ body {
     grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
     1fr 1fr 1fr 1fr 1fr 1fr;
 }
- /* 
+
+.divBlack { 
+    border: 4px solid black
+} 
     
