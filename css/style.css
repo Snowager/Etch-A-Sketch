@@ -19,6 +19,14 @@ body {
     grid-row-end: 3; 
     display: grid;
     border: 20px solid blue;
+
+}
+
+.gridStart {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .divBlack{ 
@@ -28,7 +36,3 @@ body {
 .divWhite {
     background: white;
 }
-    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
-    1fr 1fr 1fr 1fr 1fr 1fr;
-    //grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
-    1fr 1fr 1fr 1fr 1fr 1fr;
