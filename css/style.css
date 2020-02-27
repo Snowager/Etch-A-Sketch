@@ -3,6 +3,7 @@ body {
     display: grid;
     grid-template-columns: auto 960px auto;
     grid-template-rows: auto 960px auto;
+    
 }
 
 #gres {
@@ -17,17 +18,15 @@ body {
     grid-row-start: 2;
     grid-row-end: 3; 
     display: grid;
-    
+    border: 20px solid blue;
 }
 
 .divBlack{ 
     background: black;
-    border: 4px solid white;
 } 
 
 .divWhite {
     background: white;
-    border: 4px solid black; 
 }
     /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
     1fr 1fr 1fr 1fr 1fr 1fr;
