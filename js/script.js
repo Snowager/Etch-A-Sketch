@@ -18,33 +18,28 @@ function divFactory() {
         makeDiv() 
         divW = document.getElementsByClassName("divWhole")
         divW[i].classList.add("divWhite")
- 
+        divW[i].addEventListener("mouseover", function(){
+            r = event.target;
+            r.classList.remove("divWhite");
+            r.classList.add("divBlack");
+        })
     }
 }
         
 
  
-function changeColor() {
-        for (i = 0; i < (gridSize*gridSize); i++) {
-            divW = document.getElementsByClassName("divWhite")
-            divW[i].addEventListener("mouseover", function(){
-                r = event.target;
-                r.classList.remove("divWhite");
-                r.classList.add("divBlack");
-            })
-        }
-    } 
+
+
+
 
 
 reset.addEventListener("click", function() {
     container.classList.remove("gridStart");
+    container.innerHTML = "";
     gridSize = prompt("Enter a size for your drawing pad", "16");
     container.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
     container.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
-    divFactory();
-    divW[i].classList.toggle("divBlack");
-    changeColor();
+    divFactory()
 })
 
 divFactory()
-changeColor()
