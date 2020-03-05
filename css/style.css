@@ -12,6 +12,24 @@ body {
     justify-self: center;
 }
 
+#drawres {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    justify-self: end;
+}
+
+#blackres {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    justify-self: start;
+}
+
+#colorres {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    justify-self: center;
+}
+
 #container {
     grid-column-start: 2;
     grid-column-end: 3; 
@@ -29,10 +47,16 @@ body {
     1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.divBlack{ 
+.divBlack { 
     background: black;
 } 
 
 .divWhite {
     background: white;
+}
+
+.divWhole {
+    transition-property: background;
+    transition-duration: .2s
+
 }
