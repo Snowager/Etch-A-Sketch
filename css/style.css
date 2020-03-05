@@ -56,7 +56,6 @@ body {
 }
 
 .divWhole {
-    transition-property: background;
-    transition-duration: .2s
-
+    transition-property: background, opacity;
+    transition-duration: .1s, .1s;
 }
